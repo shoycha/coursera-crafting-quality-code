@@ -1,4 +1,4 @@
-def is_palindrome(s):
+def is_palindrome_v1(s):
     """ (str() -> bool
     Return True if and only if s is a palindrome
     >>> is_palindrome('noon')
@@ -24,3 +24,11 @@ def reverse(s):
     for ch in s:
         rev = ch + rev
     return rev
+
+if __name__ == "__main__":
+    word = input('Enter a word: ')
+    if is_palindrome_v1(word):
+        print(word, 'is a palindrome')
+    else:
+        print(word, 'is not a palindrome')
+	
